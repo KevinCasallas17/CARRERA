@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio sesion</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/inicio_sesion.css' %}">
+</head>
+<body>
+
+<div class="main">
+        <h1>LOGIN</h1>
+        <form action="" method="post" id="forma">
+            
+            {% csrf_token %}
+        <div class="continputs">
+            {{form.as_p}}
+        </div>
+
+            <input type="submit" value="Iniciar sesion">
+
+        </form>
+
+        {% if messages %}
+            <ul class="messages">
+                {% for message in messages %}
+                    <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+
+</div>
+
+</body>
+</html>

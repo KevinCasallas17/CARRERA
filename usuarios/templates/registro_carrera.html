@@ -1,0 +1,55 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscripcion</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/registro_carrera.css' %}">
+</head>
+<body>
+
+    {% if user.num_identificacion == carreras.usuario %}
+    <div class="inscrito">
+        <h1>Felicidades te encuentras <br> inscrito en la carrera</h1>
+
+        <table>
+        
+            <tr class="titulos">
+                <th>Usuario</th>
+                <th>Nombre</th>
+                <th>Categoria</th>
+                <th>Nivel</th>
+                <th>Fecha Inscripcion</th>
+            </tr>
+
+            <tr class="datos">
+                <td>{{carreras.usuario}}</td>
+                <td> {{user.nombre}} </td>
+                <td>{{carreras.categoria}}</td>
+                <td>{{carreras.nivel}}</td>
+                <td>{{carreras.fecha_inscripcion}}</td>
+            </tr>
+        </table>
+        <a href="{% url 'inicio' %}" class="inicio">Inicio</a>
+    </div>
+    {% else %}
+
+        <form action="" method="post" class="formulario">
+
+            {% csrf_token %}
+
+            {{form.as_p}}
+
+        <div class="botones">
+            <a href="{% url 'inicio' %}" class="cancel">Cancelar</a>
+
+            <button type="submit" class="success"><span>Inscribete</span></button>
+
+        </div>
+
+        </form>
+    {% endif %}
+
+</body>
+</html>

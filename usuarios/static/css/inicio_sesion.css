@@ -1,0 +1,55 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    background: url(https://img.redbull.com/images/c_limit,w_1500,h_1000,f_auto,q_auto/redbullcom/2012/08/25/1331575303981_1/trucos-y-estilo)
+    center center / cover no-repeat;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.main{
+    background-color: #ffffff78;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    height: 65%;
+    width: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+input{
+    border: none;
+    padding: 8px;
+    outline: none;
+    border-bottom: 1.5px solid black;
+    background-color: transparent;
+}
+
+.continputs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+label{
+    margin-right: 2rem;
+}
+
+input[type='submit']{
+    color: green;
+    background-color: transparent;
+    padding: 12px 24px;
+    border: 2px solid green;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 5rem;
+}

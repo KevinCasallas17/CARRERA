@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Angkor&family=Kanit:wght@100;400&family=Oswald:wght@500&display=swap');
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: url(https://img.redbull.com/images/q_auto,f_auto/redbullcom/2021/4/28/wrzr8bbxbc3hdt3pjar4/bmx-racing-arranque-twan-van-gendt) center center / cover no-repeat ;
+}
+
+.formulario{
+    border: 5px solid yellow;
+    border-radius: 8px;
+    width: 50%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 2rem;
+    backdrop-filter: blur(3px);
+    background-color: rgba(0, 0, 0, 0.661);
+}
+
+label{
+    color: whitesmoke;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 2.5px;
+    margin-right: 18px;
+}
+
+.campo{
+    border: none;
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-size: 15px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    background-color: white;
+}
+
+.botones{
+    margin-top: 8rem;
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+    .cancel{
+        background-color: red;
+        text-decoration: none;
+        color: white;
+        font-weight: 600;
+        font-size: 20px;
+        padding: 10px;
+        border-radius: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .success{
+        border: none;
+        background-color: rgb(15, 207, 15);
+        text-decoration: none;
+        color: white;
+        padding: 10px;
+        border-radius: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        cursor: pointer;
+    }
+        span{
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+.inscrito{
+    backdrop-filter: blur(3px);
+    background-color: rgba(0, 0, 0, 0.661);
+    display: grid;
+    place-content: center;
+    height: 60%;
+    padding: 15px;
+    border-radius: 10px;
+    border:5px solid yellow ; 
+}
+
+h1{
+    color: white;
+    letter-spacing: 2px;
+    font-size: 4rem;
+    font-family: 'Angkor', cursive;;
+    font-weight:800;
+}
+
+table{
+    border: 2px solid white;
+    color:white;
+    border-radius: 2px;
+}
+
+td{
+    font-size: 18px;
+}
+
+th{
+    border-bottom: 2px solid white;
+    font-size: 20px;
+    font-weight: 700;
+}
+.titulos{
+    text-align: center;
+}
+
+.datos{
+    text-align: center;
+}
+
+.inicio{
+    margin-top: 2rem;
+    background-color: rgb(64, 156, 226);
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 5rem;
+}

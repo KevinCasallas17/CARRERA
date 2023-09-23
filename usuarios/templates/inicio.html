@@ -1,0 +1,66 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/inicio_eduar.css' %}">
+
+</head>
+<body>
+    <nav id="navbar">
+
+        <figure>
+            <img src="https://www.shutterstock.com/shutterstock/photos/1880422924/display_1500/stock-vector-minimalist-retro-bicycle-bike-bmx-logo-design-vector-template-1880422924.jpg" alt="logo_carrera">
+        </figure>
+        <a href="{% url 'cerrar_sesion' %}" class="cerrar">Cerrar sesión</a>
+
+    </nav>
+
+    <main id="principal">
+
+        <div id="parte1">
+            <h1> Bienvenido {{user.nombre}} {{user.apellido}} </h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br> Vitae rerum numquam esse omnis provident <br>voluptate voluptates optio.</p>
+            <a href="{% url 'inscribir_carrera' %}" class="inscripcion">Inscribete</a>
+        </div>
+    
+        <div id="parte2">
+                <div class="seccion1">
+                    <p>Correo</p>
+                    <p>{{user.correo}}</p>
+                    <p>Telefono</p>
+                    <p> {{user.telefono}} </p>
+                    <p>Telefono Emergencia</p>
+                    <p>{{user.telefono_emergencia}}</p>
+                    <p>Fecha Nacimiento</p>
+                    <p>{{user.fecha_nacimiento}}</p>
+                    <p>Genero</p>
+                    <p>{{user.genero}}</p>
+                    <p>Pais</p>
+                    <p>{{user.pais}}</p>
+                </div>
+
+                <div class="seccion2">
+                    <p>Ciudad</p>
+                    <p>{{user.ciudad}}</p>
+                    <p>EPS</p>
+                    <p>{{user.eps}}</p>
+                    <p>Tipo Sangre</p>
+                    <p>{{user.sangre}}</p>
+                    <p>Talla Camisa</p>
+                    <p>{{user.talla_camisa}}</p>
+                    <p>Inscripcion</p>
+                    <p>{{user.inscripcion}}</p>
+                </div>
+                    
+        
+    
+        </div>
+    
+    </main>
+
+
+</body>
+</html>
